@@ -17,8 +17,8 @@ struct PokemonDetailView: View {
             
             VStack(spacing: 10) {
                 Text("**ID**: \(vm.pokemonDetails?.id ?? 0)")
-                Text("**Weight**: \($vm.formatHW(value: vm.pokemonDetails?.weight ?? 0)) KG")
-                Text("**Height**: \($vm.formatHW(value: vm.pokemonDetails?.height ?? 0)) M")
+                Text("**Weight**: \(vm.formatHw(value: vm.pokemonDetails?.weight ?? 0)) KG")
+                Text("**Height**: \(vm.formatHw(value: vm.pokemonDetails?.height ?? 0)) M")
             }
             .padding()
         }
